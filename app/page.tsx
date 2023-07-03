@@ -1,3 +1,4 @@
+import React from 'react';
 import Aside from './components/Aside';
 import Popular from './components/Popular';
 import Trending from './components/Trending';
