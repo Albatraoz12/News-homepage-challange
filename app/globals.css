@@ -35,3 +35,34 @@ body {
   outline: none;
   border: none;
 }
+
+main {
+  display: grid;
+  grid-template-areas: 'popular-container popular-container popular-container aside';
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.popular-container {
+  grid-area: popular-container;
+  margin-top: 2rem;
+}
+
+.aside {
+  grid-area: aside;
+  margin-top: 2rem;
+}
+
+.image-container img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.popular-text-container {
+  display: flex;
+  gap: 3rem;
+}
+
+.popular-text-container h2 {
+  font-size: 4rem;
+}
