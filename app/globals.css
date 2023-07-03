@@ -24,6 +24,10 @@ body {
   margin-top: 5rem;
 }
 
+p {
+  font-size: 15px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -75,6 +79,31 @@ main {
   font-size: 4rem;
 }
 
+.text-container {
+  line-height: 1.5rem;
+  padding: 1rem 1.5rem;
+}
+
+.text-container p {
+  margin-bottom: 3.1rem;
+}
+
+.text-container button {
+  width: 50%;
+  padding: 1rem;
+  margin: 1rem 0;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  background-color: var(--soft-red);
+  color: var(--off-white);
+  border: none;
+}
+
+.text-container button:hover {
+  cursor: pointer;
+  background-color: var(--very-dark-blue);
+}
+
 .aside {
   grid-area: aside;
   margin-top: 2rem;
@@ -96,5 +125,4 @@ main {
 
 .card:nth-last-child(1) {
   border: none;
-  /* padding: 0s; */
 }
