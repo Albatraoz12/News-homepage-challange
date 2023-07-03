@@ -22,15 +22,11 @@ const Popular = () => {
 
       <aside className='aside'>
         <h3>New</h3>
-        <div>
-          <h4>
-            {' '}
-            Hydrogen VS Electric Cars Will hydrogen-fueled cars ever catch up to
-            EVs?
-          </h4>
+        <div className='card'>
+          <h4> Hydrogen VS Electric Cars</h4>
           <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
         </div>
-        <div>
+        <div className='card'>
           <h4> The Downsides of AI Artistry</h4>
           <p>
             {' '}
@@ -38,7 +34,7 @@ const Popular = () => {
             generation?
           </p>
         </div>
-        <div>
+        <div className='card'>
           <h4> Is VC Funding Drying Up?</h4>
           <p>
             Private funding by VC firms is down 50% YOY. We take a look at what
