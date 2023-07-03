@@ -37,6 +37,7 @@ const Navbar = () => {
 
         {menuOpen && isMobile && (
           <>
+            <div className='overlay' onClick={() => setMenuOpen(false)}></div>
             <span>
               <img
                 onClick={() => setMenuOpen(false)}

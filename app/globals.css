@@ -174,7 +174,7 @@ main {
   margin-bottom: 0.3rem;
 }
 
-@media screen and (max-width: 950px) {
+/* @media screen and (max-width: 950px) {
   body {
     width: 95vw;
   }
@@ -195,7 +195,6 @@ main {
     background-color: var(--off-white);
     font-size: 2rem;
     z-index: 99;
-    /* position: absolute; */
     position: fixed;
     top: 0;
     right: 0;
@@ -223,6 +222,101 @@ main {
     top: 3.3rem;
     right: 2rem;
     bottom: 0;
+  }
+
+  .text-container {
+    line-height: 1.5rem;
+    padding: 0;
+  }
+
+  .text-container p {
+    margin-bottom: 0;
+  }
+
+  .trending-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+} */
+
+@media screen and (max-width: 950px) {
+  body {
+    width: 95vw;
+  }
+
+  main {
+    grid-template-areas:
+      'popular-container'
+      'aside'
+      'trending-container';
+    grid-template-columns: repeat(1, 1fr);
+    transition: opacity 0.3s ease;
+  }
+
+  .popular-text-container h2 {
+    font-size: 3rem;
+  }
+
+  .nav-mobile-list {
+    width: 70vw;
+    background-color: var(--off-white);
+    font-size: 2rem;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 1rem;
+  }
+
+  .list-mobile-items {
+    list-style-type: none;
+    padding: 1rem;
+  }
+
+  .list-mobile-items a {
+    color: var(--dark-grayish-blue);
+    text-decoration: none;
+  }
+
+  .popular-text-container {
+    flex-direction: column;
+  }
+
+  .menu-icon {
+    position: absolute;
+    top: 3.3rem;
+    right: 2rem;
+    bottom: 0;
+    z-index: 999;
+  }
+
+  .menu-icon-open {
+    z-index: 99999;
+    position: absolute;
+    top: 3.3rem;
+    right: 2rem;
+    bottom: 0;
+  }
+
+  .menu-icon-open .nav-mobile-list {
+    transform: translateX(0%);
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* New CSS for main tag opacity */
+  .main-opacity {
+    opacity: 0.5;
   }
 
   .text-container {
