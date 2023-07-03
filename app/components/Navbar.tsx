@@ -2,33 +2,33 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav>
-      <div>
-        <h1>HomePage</h1>
+    <nav className='navbar'>
+      <div className='navbar-image'>
+        <img src='images/logo.svg' alt='Logo' />
       </div>
       <div>
-        <ul>
-          <li>
+        <ul className='nav-list'>
+          <li className='list-items'>
             <a href='http://' target='_blank' rel='noopener noreferrer'>
               Home
             </a>
           </li>
-          <li>
+          <li className='list-items'>
             <a href='http://' target='_blank' rel='noopener noreferrer'>
               New
             </a>
           </li>
-          <li>
+          <li className='list-items'>
             <a href='http://' target='_blank' rel='noopener noreferrer'>
               Popular
             </a>
           </li>
-          <li>
+          <li className='list-items'>
             <a href='http://' target='_blank' rel='noopener noreferrer'>
               Trending
             </a>
           </li>
-          <li>
+          <li className='list-items'>
             <a href='http://' target='_blank' rel='noopener noreferrer'>
               Categories
             </a>

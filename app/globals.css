@@ -3,3 +3,35 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  width: 80vw;
+  height: 100vh;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+.nav-list .list-items a {
+  color: grey;
+  text-decoration: none;
+}
+.nav-list .list-items a:hover,
+.nav-list .list-items a:focus {
+  color: lightcoral;
+  outline: none;
+  border: none;
+}
